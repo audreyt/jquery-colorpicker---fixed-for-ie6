@@ -1,3 +1,10 @@
+This library further improved with support on mobile devices, where mousemove/mousedown
+events are not available; now simply tapping the selector cursor would work as well.
+
+The original README is below. -au
+
+----
+
 The Problem and the Solution
 	This Library Merges the jQuery ColorPicker Library (http://www.eyecon.ro/colorpicker/) with the iepngfix.htc 
 	from TwinHelix (http://www.twinhelix.com/css/iepngfix/).

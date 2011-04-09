@@ -22,9 +22,10 @@
 			$('#colorpickerHolder2').stop().animate({height: widt ? 0 : 173}, 500);
 			widt = !widt;
 		});
-		$('#colorpickerField1').ColorPicker({
-			onSubmit: function(hsb, hex, rgb) {
-				$('#colorpickerField1').val(hex);
+		$('#colorpickerField1, #colorpickerField2, #colorpickerField3').ColorPicker({
+			onSubmit: function(hsb, hex, rgb, el) {
+				$(el).val(hex);
+				$(el).ColorPickerHide();
 			},
 			onBeforeShow: function () {
 				$(this).ColorPickerSetColor(this.value);
